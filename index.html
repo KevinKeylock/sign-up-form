@@ -10,6 +10,31 @@
   <img class="image" src="ski.jpg">
   <div class="full-form">
     <form>
+      <div class='form-row-one'>
+        <label for='first-name'>FIRST NAME</label>
+        <input id='first-name' name='first-name' type='text'/>
+        <label for='last-name'>LAST NAME</label>
+        <input id='last-name' name='last-name' type='text'/>        
+      </div>
+      <div class="form-row-two">
+        <label for="email">EMAIL</label>
+        <input id="email" 
+               type="email"
+               name="email"
+               placeholder="joe@example.com"/>
+        <label for='phone-number'>PHONE NUMBER</label>
+        <input id='phone-number' 
+               name='phone-number' 
+               type='tel'
+               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+               placeholder="111-111-1111"/>        
+      </div>
+      <div class="form-row-three">
+        <label for="password">PASSWORD</label>
+        <input id="password" name="password" type="password">
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <input id="confirm-password" name="confirm-password" type="password">        
+      </div>
 
     </form>
   </div>
