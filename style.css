@@ -22,12 +22,27 @@ body{
   display: flex;
 }
 #logo{
-  height: 100px;
-  margin-left: 100px;
+  height: 15vh;
+  margin-left: 10vh;
 }
 #business-name{
   color: white;
   align-items: center;
   display: flex;
   font-size: larger;
+}
+
+.top-right-container{
+  height: 33vh;
+  background-color: #eef2fa;
+}
+.middle-right-container{
+  height: 33vh;
+}
+.bottom-right-container{
+  background-color: #eef2fa;
+  height: 34vh;
+}
+.right-container{
+  width: 100%;
 }
