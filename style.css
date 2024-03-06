@@ -48,7 +48,7 @@ body{
   color: rgb(53, 53, 53);
 }
 .top-right-container{
-  height: 33vh;
+  height: 32vh;
   background-color: #f2f5fc;
   display: flex;
 }
@@ -61,7 +61,7 @@ body{
   margin-top: 2vh;
 }
 .middle-right-container{
-  height: 33vh;
+  height: 32vh;
 }
 #content{
   margin-top: 3vh;
@@ -73,6 +73,7 @@ body{
 form{
   margin-top: 25px;
   width: 600px;
+  font-size: 14px;
 }
 .form-row-one,
 .form-row-two,
@@ -84,14 +85,25 @@ form{
   display: flex;
   flex-direction: column;
 }
-
+input{
+  margin-bottom: 20px;
+  width: 12vw;
+  height: 18px;
+  border: 1px solid #777777;
+}
 .bottom-right-container{
   background-color: #f2f5fc;
-  height: 34vh;
+  height: 33vh;
 }
 .top-right-container > *,
 .middle-right-container > *,
 .bottom-right-container > *{
-  margin-left: 10vh;
-  margin-right: 20vh;
+  margin-left: 7vw;
+  margin-right: 15vw;
+}
+button{
+  margin-top: 30px;
+}
+.bottom-right-container > div {
+  margin-top: 25px;
 }
