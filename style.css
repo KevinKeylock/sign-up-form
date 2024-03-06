@@ -3,9 +3,31 @@ body{
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   display: flex;
+}
+#left-container {
+  position: relative;
 }
 .image {
  height: 100vh;
+}
+#logo-background {
+  background-color: black;
+  padding: 10px 0 10px 0;
+  opacity: .3;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  display: flex;
+}
+#logo{
+  height: 100px;
+  margin-left: 100px;
+}
+#business-name{
+  color: white;
+  align-items: center;
+  display: flex;
+  font-size: larger;
 }
