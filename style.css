@@ -8,7 +8,7 @@ body{
   height: 100%;
   width: 100%;
   margin: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
   display: flex;
 }
 /*left side*/
@@ -16,7 +16,7 @@ body{
   position: relative;
 }
 .image {
- height: 100vh;
+ height: 101vh;
  width: 30vw;
 }
 #logo-background {
@@ -30,14 +30,14 @@ body{
 }
 #logo{
   height: 15vh;
-  width: 5vw;
+  width: auto;
   margin-left: 10vh;
 }
 #business-name{
   color: white;
   align-items: center;
   display: flex;
-  font-size: 3vw;
+  font-size: 50px;
   font-family: norse, Arial, Helvetica, sans-serif;
   margin-left: 1vw;
 }
@@ -55,7 +55,7 @@ body{
 #information {
   font-size: 22px;
   font-weight: bolder;
-  margin-top: 10vh;
+  margin-top: 10dvh;
 }
 #comment{
   margin-top: 2vh;
@@ -87,16 +87,17 @@ form{
 }
 input{
   margin-bottom: 20px;
-  width: 12vw;
-  height: 18px;
+  width: 200px;
+  height: 20px;
   border: 2px solid #777777;
-  border-radius: 9px}
+  border-radius: 9px
+}
 input:invalid{
-  border: 2px sol9d d;
+  border: 2px solid red;
 }
 .bottom-right-container{
   background-color: #f2f5fc;
-  height: 33vh;
+  height: 38vh;
 }
 .top-right-container > *,
 .middle-right-container > *,
@@ -118,4 +119,44 @@ a{
 }
 .bottom-right-container > div {
   margin-top: 25px;
+}
+@media (max-width: 920px) {
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .image{
+    height: 400px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: bottom;
+  }
+.form-row-one,
+.form-row-two,
+.form-row-three{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#information{
+  margin-top: 40px;
+}
+}
+@media (max-height:675px){
+  #information{
+    margin-top: 10px;    
+    font-size: 20px;
+  }
+  form{
+    margin-top: 5px;
+  }
+  input{
+    margin-bottom: 5px;
+  }
+  #content{
+    margin-top: 5px;
+  }  
 }
