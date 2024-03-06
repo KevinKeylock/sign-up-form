@@ -6,6 +6,7 @@ body{
   /*overflow: hidden;*/
   display: flex;
 }
+/*left side*/
 #left-container {
   position: relative;
 }
@@ -29,20 +30,42 @@ body{
   color: white;
   align-items: center;
   display: flex;
-  font-size: larger;
+  font-size: xx-large;
 }
-
-.top-right-container{
-  height: 33vh;
-  background-color: #eef2fa;
-}
-.middle-right-container{
-  height: 33vh;
-}
-.bottom-right-container{
-  background-color: #eef2fa;
-  height: 34vh;
-}
+/*right side*/
 .right-container{
   width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-right-container{
+  height: 33vh;
+  background-color: #f2f5fc;
+  display: flex;
+}
+#information {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 10vh;
+  color: rgb(53, 53, 53);
+}
+#comment{
+  margin-top: 2vh;
+}
+.middle-right-container{
+  display: flex;
+  flex-direction: column;
+  height: 33vh;
+}
+#content{
+  margin-top: 3vh;
+}
+.bottom-right-container{
+  background-color: #f2f5fc;
+  height: 34vh;
+}
+.top-right-container > *,
+.middle-right-container > *,
+.bottom-right-container > *{
+  margin-left: 10vh;
+  margin-right: 20vh;
 }
