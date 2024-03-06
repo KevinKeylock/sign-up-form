@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "norse";
+  src: url("Norse-Bold.otf");
+}
+
 html,
 body{
   height: 100%;
@@ -30,12 +35,14 @@ body{
   color: white;
   align-items: center;
   display: flex;
-  font-size: xx-large;
+  font-size: 3vw;
+  font-family: norse, Arial, Helvetica, sans-serif;
 }
 /*right side*/
 .right-container{
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;  
+  color: rgb(53, 53, 53);
 }
 .top-right-container{
   height: 33vh;
@@ -46,7 +53,6 @@ body{
   font-size: x-large;
   font-weight: bolder;
   margin-top: 10vh;
-  color: rgb(53, 53, 53);
 }
 #comment{
   margin-top: 2vh;
