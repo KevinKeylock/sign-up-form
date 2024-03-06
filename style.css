@@ -89,7 +89,11 @@ input{
   margin-bottom: 20px;
   width: 12vw;
   height: 18px;
-  border: 1px solid #777777;
+  border: 2px solid #777777;
+  border-radius: 5px;
+}
+input:invalid{
+  border: 2px solid red;
 }
 .bottom-right-container{
   background-color: #f2f5fc;
